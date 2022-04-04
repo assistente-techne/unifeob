@@ -7,18 +7,24 @@
     <title>Chatbot</title>
 
     <style>
-        body {
+        @font-face {
+            src: url(./Roboto/Roboto-Regular.ttf);
+            font-family: 'Roboto-Regular';
+            font-weight: normal;
+        }
 
+
+        body {
+            font-family: 'Roboto-Regular';
             margin: 0px 00px 00px 0;
-            background-image: url(img/fundo.jpg);
+            background-image: url(img/fundo-bk.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         .logo {
             width: 100%;
-            max-width: 800px;
-            padding: 1px;
+            max-width: 600px;
             bottom: 0;
             position: relative;
             text-align: center;
@@ -46,7 +52,7 @@
         .container {
             width: 100vw;
             height: 100vh;
-            background-color: #00264e;
+            /* background-color: #00264e; */
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -55,17 +61,25 @@
 
         .box {
             text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.507);
         }
 
         body {
             margin: 0px;
         }
 
-        .text{
+        .text {
             color: #fff;
             font-weight: 600;
             margin-top: -50px;
             font-size: 27px;
+        }
+
+        .txt-chat {
+            font-size: 30px;
+            font-weight: 700;
+            color: #20507a;
         }
     </style>
 </head>
@@ -74,6 +88,7 @@
     <div class="container">
         <div class="box">
             <img src="./img/logo.png" alt="logo" class="logo">
+            <p class="txt-chat">CHATBOT</p>
         </div>
     </div>
 
